@@ -33,11 +33,16 @@
   .btn.primary{background:var(--acc2);color:#fff}
   .fine{font-size:14px;color:var(--mut);text-align:center;line-height:1.6;margin-top:24px}
   .disc{font-size:14.5px;color:var(--mut);line-height:1.62;background:#fff;border:1px dashed var(--line);border-radius:12px;padding:14px 18px;margin-top:20px}
+  .film{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:26px}
+  .film video{width:100%;height:auto;border-radius:8px;display:block;background:#000}
+  .film .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  .film p{font-size:15px;color:var(--mut);text-align:center;margin:12px 0 0;line-height:1.6}
   @page{size:Letter;margin:0.5in 0.55in}
   @media print{
     body{background:#fff}
     .wrap{max-width:none;padding:0}
     .toplinks{display:none}
+    .film{display:none}
     header{padding-top:0}
     h1{font-size:29px}
     h2{margin:22px 0 10px;font-size:16.5px}
@@ -65,11 +70,23 @@
     <p class="sub">Feather Way healing, sacrocranial massage, sound, and energy work — quiet, attentive sessions rooted in training, tradition, and years of hands-on practice.</p>
   </header>
 
+  <div class="film">
+    <video controls preload="none" playsinline poster="commercial-poster.jpg">
+      <source src="healing-commercial.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="btns">
+      <a class="btn primary" href="sms:+17204363306?&amp;body=Hi%20Stephanie%2C%20I%27m%20interested%20in%20your%20healing%20practices.">Text Me</a>
+      <a class="btn" href="mailto:mnflwr69@gmail.com?subject=Healing%20session%20inquiry&amp;body=Hi%20Stephanie%2C%20I%27m%20interested%20in%20your%20healing%20practices.">Email Me</a>
+    </div>
+    <p>Watch the film, then tap Text Me — your messaging app opens, ready to reach Stephanie directly.</p>
+  </div>
+
   <h2>The Practices</h2>
   <div class="cards">
     <div class="card">
       <h3>Feather Way</h3>
-      <p>Healing and intention-setting work with sacred feathers, in the tradition taught by Cynthia Rose of Cynthia Rose Healing Arts Sanctuary. Feather fans and gentle clearing work for reflection, release, and renewal.</p>
+      <p>Navajo Feather Way clearings with owl feathers and parrot feathers — healing and intention-setting work with sacred feathers, in the tradition taught by Cynthia Rose of Cynthia Rose Healing Arts Sanctuary. Feather fans and gentle clearing work for reflection, release, and renewal.</p>
     </div>
     <div class="card">
       <h3>Sacrocranial Massage</h3>
